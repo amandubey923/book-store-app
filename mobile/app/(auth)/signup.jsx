@@ -23,7 +23,7 @@ export default function Signup() {
 
   const { user, isLoading, register, token } = useAuthStore();
 
-  const router = useRouter();
+  const router = useRouter(); 
 
   const handleSignUp = async () => {
     const result = await register(username, email, password);
